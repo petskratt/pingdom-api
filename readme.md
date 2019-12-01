@@ -18,9 +18,13 @@ Usage
 
 ```php
 require 'vendor/autoload.php';
-use Acquia\Pingdom\PingdomApi;
+use stojg\Pingdom\Api;
 
-$pingdom = new PingdomApi('username', 'password', 'api_key');
+$pingdom = new Api('username', 'password', 'api_key');
+
+// optionally set the Pingdom Team account email address
+$pingdom->setAccount('account_email');
+
 print_r($pingdom->getChecks());
 ```
 
