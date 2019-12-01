@@ -90,14 +90,14 @@ class Api
      *
      * @param int $limit  Limits the number of returned checks to the specified quantity (max is 25000)
      * @param int $offset Offset for listing (requires limit)
+     * @param array $parameters optional parameters (tags, include_tags etc)
      *
      * @throws MissingCredentialsException
      *
      * @return array An indexed array of checks
      */
-    public function getChecks($limit = null, $offset = null)
+    public function getChecks($limit = null, $offset = null, $parameters = [])
     {
-        $parameters = [];
         if (!empty($limit)) {
             $parameters['limit'] = $limit;
             if (!empty($offset)) {
