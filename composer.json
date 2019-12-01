@@ -1,5 +1,5 @@
 {
-    "name": "stojg/pingdom-api",
+    "name": "petskratt/pingdom-api",
     "description": "A PHP library for interacting with the Pingdom REST API.",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,10 @@
         {
             "name": "Richard Burford",
             "email": "richard.burford@acquia.com"
+        },
+        {
+            "name": "Peeter Marvet",
+            "email": "pets@tehnokratt.net"
         }
     ],
     "require": {
